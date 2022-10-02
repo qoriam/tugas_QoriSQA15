@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20221003 00:10:25.870" rpa="false" schemaversion="3">
+<suite id="s1" name="openCart" source="C:\Users\Sevima\PycharmProjects\pythonProject\pythonProject\RobotCilsy\Tests\openCart.robot">
+<test id="s1-t1" name="As a user, i want to test menu in website" line="6">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.opencart.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221003 00:10:26.435" level="INFO">Opening browser 'chrome' to base url 'https://www.opencart.com/'.</msg>
+<status status="PASS" starttime="20221003 00:10:26.435" endtime="20221003 00:10:32.137"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath=//*[@id="navbar-collapse-header"]/ul/li[3]/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20221003 00:10:32.137" level="INFO">Clicking link 'xpath=//*[@id="navbar-collapse-header"]/ul/li[3]/a'.</msg>
+<status status="PASS" starttime="20221003 00:10:32.137" endtime="20221003 00:10:34.392"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=filter_search</arg>
+<arg>paypal</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221003 00:10:34.392" level="INFO">Typing text 'paypal' into text field 'name=filter_search'.</msg>
+<status status="PASS" starttime="20221003 00:10:34.392" endtime="20221003 00:10:34.512"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id=button-search</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221003 00:10:34.513" level="INFO">Clicking button 'id=button-search'.</msg>
+<status status="PASS" starttime="20221003 00:10:34.513" endtime="20221003 00:10:36.443"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>class=extension-description</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221003 00:10:36.444" level="INFO">Clicking element 'class=extension-description'.</msg>
+<status status="PASS" starttime="20221003 00:10:36.444" endtime="20221003 00:10:39.295"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>xpath=//*[@id="marketplace-extension-info"]/div[2]/h3</arg>
+<arg>PayPal Commerce Platform Integration</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20221003 00:10:39.336" level="INFO">Element 'xpath=//*[@id="marketplace-extension-info"]/div[2]/h3' contains text 'PayPal Commerce Platform Integration'.</msg>
+<status status="PASS" starttime="20221003 00:10:39.296" endtime="20221003 00:10:39.336"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221003 00:10:39.336" endtime="20221003 00:10:41.611"/>
+</kw>
+<status status="PASS" starttime="20221003 00:10:26.432" endtime="20221003 00:10:41.611"/>
+</test>
+<status status="PASS" starttime="20221003 00:10:25.870" endtime="20221003 00:10:41.614"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="openCart">openCart</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
